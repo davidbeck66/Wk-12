@@ -21,3 +21,5 @@ def ScoreFinder(players, scores, name):
     if name in players:
         a = players.index(name)
         print("OUTPUT", players[a],"got a score of", scores[a])
+def Union(lis1,lis2):
+    return lis1 + list(set(lis2) - set(lis1))
