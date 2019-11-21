@@ -14,3 +14,6 @@ def UpdateString(str1,str2,index):
     s = list(str1)
     s[index] = str2
     return ''.join(s)
+def FindWordCount(string,lis):
+    lis = LoadFile("sample_file.txt")
+    return sum(string in i for i in lis)
