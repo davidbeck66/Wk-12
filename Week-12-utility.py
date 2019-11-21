@@ -10,3 +10,7 @@ def LoadFile(file):
     with open (file) as f:
         data = [line.strip() for line in open(file, 'r')]
         return data
+def UpdateString(str1,str2,index):
+    s = list(str1)
+    s[index] = str2
+    return ''.join(s)
