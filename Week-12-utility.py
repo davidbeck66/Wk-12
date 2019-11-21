@@ -17,3 +17,7 @@ def UpdateString(str1,str2,index):
 def FindWordCount(string,lis):
     lis = LoadFile("sample_file.txt")
     return sum(string in i for i in lis)
+def ScoreFinder(players, scores, name):
+    if name in players:
+        a = players.index(name)
+        print("OUTPUT", players[a],"got a score of", scores[a])
