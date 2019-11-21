@@ -23,3 +23,6 @@ def ScoreFinder(players, scores, name):
         print("OUTPUT", players[a],"got a score of", scores[a])
 def Union(lis1,lis2):
     return lis1 + list(set(lis2) - set(lis1))
+def Intersection(lis1,lis2):
+    inter = [i for i in lis1 if i in lis2]
+    return inter
