@@ -26,3 +26,6 @@ def Union(lis1,lis2):
 def Intersection(lis1,lis2):
     inter = [i for i in lis1 if i in lis2]
     return inter
+def NotIn(lis1, lis2):
+    List = list(set(lis1) - set(lis2))
+    return List
